@@ -8,7 +8,7 @@ import {
   Navs,
   MainNavContainer,
   NavsButton,
-} from "./Index";
+} from "./Navbar";
 
 const Navbar = () => {
   return (

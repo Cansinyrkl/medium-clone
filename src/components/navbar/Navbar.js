@@ -4,7 +4,7 @@ export const MainNavContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  margin: 24px 340px;
 `;
 // background-color: #ffc52a;
 export const MainNav = styled.div`
