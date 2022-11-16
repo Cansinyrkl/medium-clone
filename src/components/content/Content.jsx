@@ -135,6 +135,7 @@ const Content = () => {
           </Arrangement>
         </Parent>
       </TrendContentContainer>
+      <hr />
     </>
   );
 };
