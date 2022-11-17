@@ -3,9 +3,7 @@ import {
   MainContainer,
   BlogImage,
   TrendContent,
-  TopTrend,
   TrendContentUser,
-  TrendContentFlex,
   TrendContentHeader,
   ImgageImgage,
 } from "./ContentBlogs";
@@ -40,18 +38,17 @@ const ContentBlogs = () => {
         {blog.map(({ name, email, body }) => {
           return (
             <div>
-              <BlogImage src={Logo}></BlogImage>
               <TrendContent>
-                <TopTrend>
-                  <TrendContentUser>{name}</TrendContentUser>
-                  <TrendContentUser>{email}</TrendContentUser>
-                </TopTrend>
-                <TrendContentFlex>
-                  <TrendContentHeader>{body}</TrendContentHeader>
-                  <ImgageImgage src={Logo}></ImgageImgage>
-                  {date}
-                </TrendContentFlex>
+                <BlogImage src={Logo}></BlogImage>
+                <TrendContentUser>{name}</TrendContentUser>
               </TrendContent>
+              <TrendContent>
+                <TrendContentHeader>{body}</TrendContentHeader>
+
+                <ImgageImgage src={Logo}></ImgageImgage>
+              </TrendContent>
+              <TrendContentUser>{email}</TrendContentUser>
+              {date}
               <hr />
             </div>
           );

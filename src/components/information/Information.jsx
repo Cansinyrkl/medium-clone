@@ -9,7 +9,6 @@ import {
 const Information = () => {
   return (
     <>
-      <hr />
       <InformationContainer>
         <BigHeader>Stay curious.</BigHeader>
         <AltHeader>
@@ -18,7 +17,6 @@ const Information = () => {
         </AltHeader>
         <AltButton>Start reading</AltButton>
       </InformationContainer>
-      <hr />
     </>
   );
 };

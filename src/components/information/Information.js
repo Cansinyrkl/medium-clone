@@ -3,8 +3,12 @@ import styled from "styled-components";
 export const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0px 340px;
-  padding: 60px 0;
+  padding: 140px 0;
+  background-color: #ffc017;
+  width: 100%;
+  height: 10%;
+  padding-left: 20%;
+  border-bottom: 1px solid black;
 `;
 export const BigHeader = styled.div`
   font-size: 106px;

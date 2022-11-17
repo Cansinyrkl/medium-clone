@@ -8,6 +8,7 @@ import {
   Navs,
   MainNavContainer,
   NavsButton,
+  Emty,
 } from "./Navbar";
 
 const Navbar = () => {
@@ -20,6 +21,7 @@ const Navbar = () => {
           <Icons2></Icons2>
           Medium
         </MainIcons>
+        <Emty></Emty>
         <MainNav>
           <Navs href="#">Our story</Navs>
           <Navs href="#">Membership</Navs>

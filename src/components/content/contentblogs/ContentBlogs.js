@@ -2,22 +2,9 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   margin: 40px 325px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 35%;
-`;
-export const MainContainerImg = styled.div`
-  margin: 40px 325px;
-  display: flex;
+  width: 30%;
 `;
 
-export const ContainerImg = styled.img`
-  cursor: pointer;
-  width: 16%;
-  margin: 0px 8px;
-  position: relative;
-`;
 export const BlogImage = styled.img`
   border-radius: 100%;
   cursor: pointer;
@@ -26,30 +13,27 @@ export const BlogImage = styled.img`
 `;
 
 export const TrendContent = styled.div`
-  margin: 8px 10px;
+  margin: 10px;
+  display: flex;
 `;
 
-export const TopTrend = styled.div`
-  display: inline-flex;
-  align-items: center;
-`;
 export const TrendContentUser = styled.div`
   font-size: 12px;
   font-family: Helvetica;
-  justify-content: space-between;
 `;
-export const TrendContentFlex = styled.div`
-  display: inline;
-  margin: 20px 0px;
-`;
+
 export const TrendContentHeader = styled.div`
-  font-size: 16px;
   font-family: Helvetica;
   font-weight: 600;
-  inline: none;
+  font-size: 22px;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
 `;
 
 export const ImgageImgage = styled.img`
   cursor: pointer;
-  width: 200px;
+  width: 20%;
 `;
