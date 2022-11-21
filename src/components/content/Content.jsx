@@ -45,6 +45,7 @@ const Content = () => {
             <TrendContent>
               <TopTrend>
                 <TrendImage src={Logo} />
+
                 <TrendContentUser>Arthur Hayes İn Entrepure</TrendContentUser>
               </TopTrend>
               <TrendContentFlex>
