@@ -17,7 +17,6 @@ export const MainNav = styled.div`
   font-weight: lighter;
 `;
 export const Navs = styled.a`
-  text-decoration: none;
   color: black;
   margin-left: 28px;
 `;
@@ -43,6 +42,7 @@ export const MainIcons = styled.div`
   justify-content: center;
   font-weight: 600;
   cursor: pointer;
+  color: black;
 `;
 export const Icons1 = styled.div`
   width: 12px;

@@ -1,13 +1,10 @@
-import Content from "./components/content/Content.jsx";
-import Information from "./components/information/Information.jsx";
-import ContentBlogs from "./components/content/contentblogs/ContentBlogs.jsx";
 import "./App.css";
 import menuData from "./menuData";
-import { NavLink, Route, Routes } from "react-router-dom";
-import OutStory from "./components/navbar/ourstory/OutStory.jsx";
-import Membership from "./components/navbar/membership/Membership.jsx";
-import Write from "./components/navbar/write/Write.jsx";
-import Home from "./components/home/Home.jsx";
+import OutStory from "./components/pages/ourstory/OutStory.jsx";
+import Membership from "./components/pages/membership/Membership.jsx";
+import Write from "./components/pages/write/Write.jsx";
+import Home from "./components/pages/home/Home.jsx";
+import ErrorPage from "./components/pages/errorpage/ErrorPage";
 import {
   MainNav,
   Icons0,
@@ -19,44 +16,47 @@ import {
   NavsButton,
   Emty,
 } from "./menuDataStyle";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <Information></Information>
-      <Content></Content>
-      <ContentBlogs></ContentBlogs>
-      <MainNavContainer>
-        <MainIcons>
-          <Icons0></Icons0>
-          <Icons1></Icons1>
-          <Icons2></Icons2>
-          Medium
-        </MainIcons>
-        <Emty></Emty>
-        {menuData.map((item, index) => {
-          return (
-            <MainNav>
-              <div key={index}>
-                <NavLink
-                  to={item.path}
-                  className={({ isActive }) =>
-                    ["nav-link", isActive ? "active" : null].join(" ")
-                  }
-                >
-                  <Navs>{item.title}</Navs>
-                </NavLink>
-              </div>
-            </MainNav>
-          );
-        })}
-        <NavsButton href="#">Get started</NavsButton>
-      </MainNavContainer>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/write" element={<Write />}></Route>
-        <Route path="/membership" element={<Membership />}></Route>
-        <Route path="/outstory" element={<OutStory />}></Route>
-      </Routes>
+      <Router>
+        <MainNavContainer>
+          <MainIcons>
+            <Icons0></Icons0>
+            <Icons1></Icons1>
+            <Icons2></Icons2>
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+              Medium
+            </Link>
+          </MainIcons>
+
+          <Emty></Emty>
+          {menuData.map((item, index) => {
+            return (
+              <MainNav>
+                <div key={index}>
+                  <Link
+                    to={item.path}
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <Navs>{item.title}</Navs>
+                  </Link>
+                </div>
+              </MainNav>
+            );
+          })}
+          <NavsButton href="#">Get started</NavsButton>
+        </MainNavContainer>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/write" element={<Write />} />
+          <Route path="/membership" element={<Membership />} />
+          <Route path="/outstory" element={<OutStory />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
