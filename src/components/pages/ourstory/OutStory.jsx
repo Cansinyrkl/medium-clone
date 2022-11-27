@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import {
   Header,
   Logo,
@@ -13,16 +14,20 @@ import {
   OutStoryUsers,
   OutStoryUsersDiv,
   OutStoryUsersLogo,
+  OutStoryUsersTitle,
+  ReadersGrowingContainer,
+  ReadersGrowingContainerLeft,
+  ReadersGrowingContainerRight,
 } from "./OurStorty.js";
+
+
 
 const OutStory = () => {
   const [userPhoto, setUserPhoto] = useState([]);
-  const [user, setUser] = useState([]);
   useEffect(() => {
     PhotoData();
-    UsersData();
-  }, []);
 
+  }, []);
   const PhotoData = async () => {
     await fetch("https://jsonplaceholder.typicode.com/photos")
       .then((response) => response.json())
@@ -31,15 +36,7 @@ const OutStory = () => {
         console.log(err);
       });
   };
-  const UsersData = async () => {
-    await fetch("https://jsonplaceholder.typicode.com/comments")
-      .then((response) => response.json())
-      .then((res) => setUser(res))
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
+  const DividedPhoto = userPhoto.slice(4988);
   return (
     <>
       <Header>
@@ -88,17 +85,27 @@ const OutStory = () => {
           smart takes on our own suite of blogs and publications.
         </OutStorContent>
         <OutStoryUsers>
-          {userPhoto.map(({ thumbnailUrl }) => {
+          {DividedPhoto.map(({ thumbnailUrl, title }) => {
             return (
               <OutStoryUsersDiv>
                 <OutStoryUsersLogo src={thumbnailUrl} />
+                <OutStoryUsersTitle>{title}</OutStoryUsersTitle>
               </OutStoryUsersDiv>
             );
           })}
+
         </OutStoryUsers>
       </OutStoryNetworkContainer>
+      <ReadersGrowingContainer>
+        <ReadersGrowingContainerLeft>Over 100<br /> million<br /> readers and growing.</ReadersGrowingContainerLeft>
+        <ReadersGrowingContainerRight>
+
+        </ReadersGrowingContainerRight>
+      </ReadersGrowingContainer>
     </>
   );
 };
 
 export default OutStory;
+
+

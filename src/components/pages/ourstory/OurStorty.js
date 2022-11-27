@@ -39,7 +39,7 @@ export const Image = styled.img`
   width: 500px;
 `;
 export const OutStoryNetworkContainer = styled.div`
-  padding: 50px;
+  padding: 2vh;
   background-color: #ffd1b9;
 `;
 export const OutStoryNetwork = styled.div`
@@ -63,6 +63,7 @@ export const OutStoryUsers = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-column-gap: 20px;
+  margin-top:5vh;
 `;
 export const OutStoryUsersDiv = styled.div`
   list-style-type: none;
@@ -70,12 +71,48 @@ export const OutStoryUsersDiv = styled.div`
   display: flex;
   align-items: center;
   border-top: 1px solid red;
-  margin: 0px;
-  height: 9vh;
+  height: 8vh;
 `;
 
 export const OutStoryUsersLogo = styled.img`
   width: 6vh;
   height: 6vh;
   border-radius: 100%;
+`;
+export const OutStoryUsersTitle = styled.div`
+margin-left: 18px
+`;
+
+export const ReadersGrowingContainer = styled.div`
+background-color: black;
+color:white;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+grid-column-gap: 20px;
+border-bottom: 1px solid white;
+`;
+export const ReadersGrowingContainerLeft = styled.div`
+font-size: 130px;
+color:white;
+border-right: 1px solid white;
+padding:3vh
+
+`;
+export const ReadersGrowingContainerRight = styled.div`
+color:white;
+padding:3vh;
+`;
+export const ReadersGrowingContainerLogoContainer = styled.div`
+display:flex;
+align-items: center;
+`;
+export const ReadersGrowingContainerText = styled.div`
+display: block;
+font-size:22px;
+font-weight: 600;
+font-family: sans-serif;
+margin-top: 5vh;
 `;

@@ -31,11 +31,13 @@ const ContentBlogs = () => {
         console.log(err);
       });
   };
+  const blogslice = blog.slice(488)
+
 
   return (
     <>
       <MainContainer>
-        {blog.map(({ name, email, body }) => {
+        {blogslice.map(({ name, email, body }) => {
           return (
             <div>
               <TrendContent>
@@ -44,7 +46,6 @@ const ContentBlogs = () => {
               </TrendContent>
               <TrendContent>
                 <TrendContentHeader>{body}</TrendContentHeader>
-
                 <ImgageImgage src={Logo}></ImgageImgage>
               </TrendContent>
               <TrendContentUser>{email}</TrendContentUser>
