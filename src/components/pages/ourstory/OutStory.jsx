@@ -18,7 +18,40 @@ import {
   ReadersGrowingContainer,
   ReadersGrowingContainerLeft,
   ReadersGrowingContainerRight,
+  ReadersGrowingContainerBottom,
+  ReadersGrowingAltContainer,
+  BottomThinking,
+  GreenArea,
+  GreenAreaText,
+  GreenAreaContainer,
+  ReadersGrowingButton,
+  BottomThinkingContainer,
+  GreenAreaTextButton,
+  GreenAreaGrid,
+  GreenGridLeft,
+  GreenGridLeftContent,
+  GreenGridLeftBottom,
+  GreenGridRightContent,
+  GreenGridRight,
+  GreenGridRighttBottom,
+  TakeMediumContainer,
+  TakeMediumContainerLeft,
+  TakeMediumContainerRight,
+  TakeMediumContainerLeftImg,
+  TakeMediumContainerText,
+  JoinUs,
+  JoinUsLeft,
+  JoinUsRight,
+  JoinUsRightGrid,
+  JoinUsRightGridHeader,
+  JoinUsRightGridText,
+  JoinUsRightGridButton,
+  YourWorld,
+  YourRight,
+  YourRightButton,
+  MediumLogo,
 } from "./OurStorty.js";
+
 
 
 
@@ -97,11 +130,107 @@ const OutStory = () => {
         </OutStoryUsers>
       </OutStoryNetworkContainer>
       <ReadersGrowingContainer>
-        <ReadersGrowingContainerLeft>Over 100<br /> million<br /> readers and growing.</ReadersGrowingContainerLeft>
-        <ReadersGrowingContainerRight>
-
-        </ReadersGrowingContainerRight>
+        <ReadersGrowingAltContainer>
+          <ReadersGrowingContainerLeft>Over 100<br /> million<br /> readers and growing.</ReadersGrowingContainerLeft>
+          <ReadersGrowingContainerRight>
+            Burası Boş Carosel gelicek unutma
+          </ReadersGrowingContainerRight>
+        </ReadersGrowingAltContainer>
+        <ReadersGrowingContainerBottom>
+          Create the space for your <br />
+        </ReadersGrowingContainerBottom>
+        <ReadersGrowingContainerBottom>
+          thinking to take off.
+        </ReadersGrowingContainerBottom>
+        <BottomThinkingContainer>
+          <BottomThinking>
+            A blank page is also a door. At Medium you can walk through it. It's easy
+          </BottomThinking>
+          <BottomThinking>
+            and free to share your thinking on any topic, connect with an audience,
+          </BottomThinking>
+          <BottomThinking>
+            express yourself with a range of publishing tools, and even earn money for
+          </BottomThinking>
+          <BottomThinking>
+            your work.
+          </BottomThinking>
+          <ReadersGrowingButton>Write on Medium</ReadersGrowingButton>
+        </BottomThinkingContainer>
       </ReadersGrowingContainer>
+      <GreenAreaContainer>
+        <GreenArea>
+          Get more with
+        </GreenArea>
+        <GreenArea>
+          membership.
+        </GreenArea>
+        <BottomThinkingContainer>
+          <GreenAreaText>
+            Become a Medium member to enjoy unlimited access and directly support
+          </GreenAreaText>
+          <GreenAreaText>
+            the writers you read most.
+          </GreenAreaText>
+          <GreenAreaTextButton>See membership options</GreenAreaTextButton>
+        </BottomThinkingContainer>
+        <GreenAreaGrid>
+          <GreenGridLeft>
+            <GreenGridLeftContent>
+              Read as much as you want.
+            </GreenGridLeftContent>
+            <Image
+              src="https://media.tenor.com/6YsumrIde9QAAAAd/efe-aydal-gif.gif"
+              alt="#"
+            />
+            <GreenGridLeftBottom>Enjoy unlimited access to every story across all of your devices.</GreenGridLeftBottom>
+          </GreenGridLeft>
+          <GreenGridRight>
+            <GreenGridRightContent>Reward quality content.</GreenGridRightContent>
+            <Image
+              src="https://media.tenor.com/6YsumrIde9QAAAAd/efe-aydal-gif.gif"
+              alt="#"
+            />
+            <GreenGridRighttBottom>Your membership helps us pay writers, and keeps your experience ad-free.</GreenGridRighttBottom>
+          </GreenGridRight>
+        </GreenAreaGrid>
+      </GreenAreaContainer>
+      <TakeMediumContainer>
+        <div>
+          <TakeMediumContainerLeft>Take Medium </TakeMediumContainerLeft>
+          <TakeMediumContainerLeft>with you.</TakeMediumContainerLeft>
+          <TakeMediumContainerText>Download our app so you can read wherever you are.</TakeMediumContainerText>
+          <TakeMediumContainerLeftImg src={"/image/Apple.jpg"} />
+          <TakeMediumContainerLeftImg src={"/image/Play.jpg"} />
+        </div>
+        <TakeMediumContainerRight src={"/image/Gridright.jpg"} />
+      </TakeMediumContainer>
+      <JoinUs>
+        <JoinUsLeft>Learn more<br /> about us. Or<br /> join us.</JoinUsLeft>
+        <JoinUsRight>
+          <JoinUsRightGrid>
+            <JoinUsRightGridHeader>The Medium blog</JoinUsRightGridHeader>
+            <JoinUsRightGridText>Visit our company blog for the latest news, <br /> product updates, and tips and tricks.</JoinUsRightGridText>
+            <JoinUsRightGridButton>Read our blog</JoinUsRightGridButton>
+          </JoinUsRightGrid>
+          <JoinUsRightGrid>
+            <JoinUsRightGridHeader>Work at Medium</JoinUsRightGridHeader>
+            <JoinUsRightGridText>Our team is home to engineers, journalists, artists, <br />and creatives of all stripes.</JoinUsRightGridText>
+            <JoinUsRightGridButton>View open positions</JoinUsRightGridButton>
+          </JoinUsRightGrid>
+        </JoinUsRight>
+      </JoinUs>
+      <YourWorld>
+      <Image
+              src="https://media.tenor.com/pRqzQzIJ0ZQAAAAd/efe-aydal-hans-bilal.gif"
+              alt="#"
+            />
+        <YourRight>
+          Read, write, <br/> and expand <br/> your world.
+          <YourRightButton>Get started</YourRightButton>
+        </YourRight>
+      </YourWorld>
+      <MediumLogo>Medium</MediumLogo>
     </>
   );
 };
