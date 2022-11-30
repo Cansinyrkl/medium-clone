@@ -7,6 +7,7 @@ export const BottomContainer = styled.div`
   background-color: #bcdfff;
   justify-content: center;
   padding: 5vh;
+  border-bottom: 1px solid black;
 `;
 export const Header = styled.div`
   font-size: 12vh;
