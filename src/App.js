@@ -4,7 +4,7 @@ import OutStory from "./components/pages/ourstory/OutStory.jsx";
 import Membership from "./components/pages/membership/Membership.jsx";
 import Write from "./components/pages/write/Write.jsx";
 import Home from "./components/pages/home/Home.jsx";
-import ErrorPage from "./components/pages/errorpage/ErrorPage";
+import ErrorPage from "./components/pages/errorpage/ErrorPage.jsx";
 import {
   MainNav,
   Icons0,
